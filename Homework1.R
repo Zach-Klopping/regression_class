@@ -14,3 +14,4 @@ colnames(ph) <- c("President", "Height_in")
 head(ph)
 hist(ph$Height_in, main="President Height", xlab="Height(in)", ylab="Frequency")
 summary(ph$Height_in)
+#Idk 
