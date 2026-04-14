@@ -1,0 +1,103 @@
+---
+title: "Homework 3"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r, message = FALSE, warning = FALSE}
+library(faraway)
+library(readr)
+md23 <- read.csv(here::here("Data", "minmax_dec2023.csv"))
+nba_total <- read.csv(here::here("Data", "nbatotal_2022_23.csv"))
+```
+
+# Question 1B
+```{r}
+mod <- lm(TMAX ~ TMIN, data=md23)
+sumary(mod)
+```
+
+# Question 1C
+There does appear to be evidence of a significant relationship, as the p-value is significant at the 0.05 level. 
+
+# Question 1D
+45.52559
+32.50739 + 0.43394(30) = 45.52559
+
+# Question 1E
+The errors may not be independent since there are usually many hot days or many cold days together. 
+
+# Question 1F
+```{r}
+residuals <- resid(mod)
+plot(md23$TMIN, residuals)
+abline(h=0)
+```
+I don’t think there are any violations. There looks to be little more variance towards the middle of the graph, but I don’t think you could conclude there is non-constant variance overall. 
+
+# Question 2A
+```{r}
+nba_total2 <-nba_total[nba_total$MP >= 96,]
+nrow(nba_total) - nrow(nba_total2)
+```
+70 players. 
+
+# Question 2B
+```{r}
+plot(nba_total2$AST, nba_total2$TOV)
+```
+The relationship looks fairly linear, so you could use simple linear regression. 
+
+# Question 2C
+```{r}
+mod <- lm(TOV ~ AST, data=nba_total2)
+sumary(mod)
+```
+75% of the variance in the response is explained by total assists. 
+
+# Question 2D
+```{r}
+mod1 <- lm(TOV ~ AST + MP + FGA, data=nba_total2)
+sumary(mod1)
+```
+88% of the variance in the response is explained by our model. 
+
+# Question 2E
+Minutes played doesn’t seem like a useful predictor because the p-value is 0.89, which doesn’t suggest significance. 
+
+# Question 2F
+```{r}
+mod2 <- lm(TOV ~ AST + FGA, data=nba_total2)
+summary(mod2)
+```
+19.82 is our estimate of the standard deviation of the regression errors. 
+
+# Question 3A
+```{r}
+data(cheddar)
+mod <- lm (taste ~ Acetic + H2S + Lactic, data=cheddar)
+summary(mod)
+```
+BetaAcetic = 0.32774
+BetaH2S = 3.91184
+BetaLactic = 19.67054
+
+# Question 3B
+```{r}
+r2 <- cor(fitted(mod), cheddar$taste)**2
+r2
+```
+This is the R-Squared in the regression output. 
+
+
+
+
+
+
+
+
+
+
+
+

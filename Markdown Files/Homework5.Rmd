@@ -1,0 +1,131 @@
+---
+title: "Homework 5"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r, message = FALSE, warning = FALSE}
+library(faraway)
+library(ggplot2)
+```
+
+# Question 1A
+```{r}
+data(fortune)
+
+ggplot(data=fortune) +
+  geom_point(aes(x=age, y=wealth, shape=region))
+```
+The plot seems to show very little linear correlation between age on wealth. There are also a few very large outliers in the data. 
+
+# Question 1B
+```{r}
+
+
+# Untransformed Model
+lm_wealth <- lm(I(wealth^1) ~ age + region, data=fortune)
+summary(lm_wealth)
+
+plot(fitted(lm_wealth), residuals(lm_wealth), 
+     main='Untransformed Residual Plot')
+qqnorm(residuals(lm_wealth), main='Untransformed QQ Plot')
+qqline(residuals(lm_wealth))
+
+# Transformed Model
+lm_wealth_transformed <- lm(I(wealth^-1) ~ age + region, data=fortune)
+summary(lm_wealth_transformed)
+
+plot(fitted(lm_wealth_transformed), residuals(lm_wealth_transformed), 
+     main='Transformed Residual Plot')
+qqnorm(residuals(lm_wealth_transformed), main='Transformed QQ Plot')
+qqline(residuals(lm_wealth_transformed))
+```
+
+# Question 1C
+y-1= 0.574005 - 0.001044xi1+ 0.075583xi2 +0.044024xi3 +0.051481xi4 +0.042186xi5 
+
+xi1 - Age
+xi2 - Europe
+xi3 - Middle East
+xi4 - Other
+xi5 - USA
+Reference Level: Asia
+
+There doesn’t seem to be much of a relationship between age and region on wealth in this dataset. There are no predictors even close to being significant, and the adjusted R-squared is -0.009. 
+
+# Question 2A
+```{r}
+data(pulp)
+lm_pulp <- lm(bright ~ operator, data=pulp)
+summary(lm_pulp)
+anova(lm_pulp)
+```
+There appears to be a difference between the operators, as the operator p-value in the one-way ANOVA is significant at the 0.05 level (p value: 0.02261)
+
+# Question 2B
+```{r}
+pairwise.t.test(pulp$bright, pulp$operator, p.adjust.method='none')
+pairwise.t.test(pulp$bright, pulp$operator, p.adjust.method='bonferroni')
+pairwise.t.test(pulp$bright, pulp$operator, p.adjust.method='fdr')
+```
+Pairwise t test without mht correction suggests the difference between level b and d is significant at the 0.01 level (p value: 0.0083. Pairwise t test with bonferroni correction suggest no factor levels are different at the 0.01 level. Same with fdr; however, the p values do get smaller and you see a difference between b and d as well as b and c at the 0.05 level. 
+
+# Question 3A
+```{r}
+data(butterfat)
+
+mature <- subset(butterfat, Age == 'Mature')
+lm_butterfat <- lm(Butterfat ~ Breed, data=mature)
+anova(lm_butterfat)
+```
+One-way Anova suggests there is a difference between the breeds as the p-value from the f test is highly significant (2e-16). 
+
+# Question 3B
+```{r}
+plot(fitted(lm_butterfat), residuals(lm_butterfat), 
+     main='Butterfat Residual Plot')
+qqnorm(residuals(lm_butterfat), main='Butterfat QQ Plot')
+qqline(residuals(lm_butterfat))
+sum(hatvalues(lm_butterfat) > 2*5/50)
+```
+Variance might be a little higher as fitted value increases, but still seems to satisfy our assumptions. 
+Residuals might be slightly long - tailed, but still seems to satisfy our assumptions. 
+There are no large leverage values (no hat values greater than 2p/n). 
+
+# Question 3C
+```{r}
+boxplot(Butterfat ~ Breed, data=mature)
+pairwise.t.test(mature$Butterfat, mature$Breed, p.adjust.method='bonferroni')
+```
+All breeds are different from each other at the 0.05 level except Guernsey and Jersey as well as Ayrshire and Canada. This appears to be reflected in the boxplot. 
+
+# Question 4
+```{r}
+data(prostate)
+
+lm_prostate <- lm(lpsa ~ lcavol + lweight + age + lbph + svi + lcp + 
+                    gleason + pgg45, data=prostate)
+
+# Checking Leverage Points
+sum(hatvalues(lm_prostate) > 2*9/97)
+halfnorm(hatvalues(lm_prostate), main='Leverage Points', nlab=0)
+
+# Checking Outliers 
+rstud_pvals <- 2*pt(-abs(rstudent(lm_prostate)), 87)
+sum(p.adjust(rstud_pvals, "bonferroni") < 0.05)
+plot(fitted(lm_prostate), rstudent(lm_prostate), main='Studentized Residuals')
+
+# Uncorrected Test of Outliers
+sum(abs(rstudent(lm_prostate)) > 3)
+
+# Checking Influential Points
+sum(cooks.distance(lm_prostate) > 4/97)
+halfnorm(cooks.distance(lm_prostate), main='Cooks Distance', nlab=0)
+plot(lm_prostate, 5)
+```
+There are five points that could be potential leverage points.Looking at the leverage point plot, there looks to be one clear leverage point, and a few others could be, so five seems to make sense. 
+
+Looking at the studentized residual plot , there are no residuals greater than three, so I don’t think there are any outliers. I also ran bonferri adjusted test for outliers and found zero. 
+
+Looking at the cooks distance graph, there are atleast four points that I would say are influential (maybe as many as 7). Claude said the common heuristic for assessing influential points is checking cooks distance greater than 4/n. This resulted in seven points that could possibly be influential. 

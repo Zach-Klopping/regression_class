@@ -1,0 +1,167 @@
+---
+title: "Homework 4"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r, message = FALSE, warning = FALSE}
+library(faraway)
+```
+
+# Question 1A
+```{r}
+data(sat)
+lm_sat <- lm(total ~ salary, data=sat)
+summary(lm_sat)
+lm1_sat <- lm(total ~ expend + ratio + salary, data=sat)
+summary(lm1_sat)
+```
+The t-test suggests that none of the parameters themselves are significant at the 0.05 level, and we fail to reject that Salary = 0. However, the F-statistic causes us to reject the null that Salary=Ratio=Expend=0, which implies there is some overall effect of the predictors
+
+# Question 1B
+```{r}
+lm2_sat <- lm(total ~ expend + ratio + salary + takers, data=sat)
+summary(lm2_sat)
+anova(lm1_sat, lm2_sat)
+```
+We reject the null hypothesis that  Takers= 0. The p-value of the nested F test is 2.607e-16 *** and the p-value of the takers predictor is 2.61e-16 *** which are equivalent (rounded). 
+
+# Question 1C
+Model 1
+F-statistic: 11.52 on 1 and 48 DF
+F1, 48
+
+Model 2
+F-statistic: 4.066 on 3 and 46 DF
+F3, 46
+
+Model 3
+F-statistic: 52.88 on 4 and 45 DF
+F4, 45
+
+# Question 2
+```{r}
+data(prostate)
+names(prostate)
+lm_pro <- lm(lpsa ~ lcavol + lweight + age + lbph 
+           + svi + lcp + gleason + pgg45, data = prostate)
+plot(fitted(lm_pro), residuals(lm_pro))
+
+qqnorm(residuals(lm_pro))
+qqline(residuals(lm_pro))
+```
+Constant Variance seems to be satisfied.
+Residuals seem to be approximately normal, but maybe slightly long-tailed. 
+
+# Question 3
+```{r}
+data(swiss)
+names(swiss)
+lm_swiss <- lm(Fertility ~ Agriculture + Examination + Education 
+               + Catholic + Infant.Mortality, data = swiss)
+
+plot(fitted(lm_swiss), residuals(lm_swiss))
+
+qqnorm(residuals(lm_swiss))
+qqline(residuals(lm_swiss))
+```
+Constant Variance seems to be satisfied
+Residuals seem to be approximately normal,
+
+# Question 4A
+```{r}
+data(prostate)
+lm_pro <- lm(lpsa ~ lcavol + lweight + age + lbph 
+             + svi + lcp + gleason + pgg45, data = prostate)
+
+newdata <- data.frame(lcavol=1.44692, lweight=3.62301,
+                      age=65, lbph=0.3001, svi=0,
+                      lcp=-0.79851, gleason=7, pgg45=15)
+
+predict(lm_pro, newdata, interval = 'prediction', level = 0.95)
+```
+lpsa is 2.389 with 95% CI (0.965, 3.813)
+
+# Question 4B
+```{r}
+newdata1 <- data.frame(lcavol=1.44692, lweight=3.62301,
+                      age=20, lbph=0.3001, svi=0,
+                      lcp=-0.79851, gleason=7, pgg45=15)
+
+predict(lm_pro, newdata1, interval = 'prediction', level = 0.95)
+```
+The confidence interval is wider because 20 is further from the mean age than 65. 
+
+# Question 4C
+```{r}
+lm_pro_sig <- lm(lpsa ~ lcavol + lweight + svi, data = prostate)
+predict(lm_pro_sig, newdata, interval = 'prediction', level = 0.95)
+predict(lm_pro_sig, newdata1, interval = 'prediction', level = 0.95)
+```
+The confidence interval for the age 65 prediction is slightly wider; however, the confidence interval for age 20 is now much narrower because we got rid of age as a predictor, and thus changing age doesn’t affect our prediction. 
+
+I think we should prefer the simpler model, because keeping lots of insignificant predictors could lead to overfitting when trying to predict new data. But we should also be aware that if we drop age as a predictor, then the simple model gives us false confidence (through the narrower CI) that we can extrapolate our findings out to age 20 when we likely can’t. 
+
+# Question 5A
+```{r}
+data(snail)
+lm_snail <- lm(water ~ temp + humid, data = snail)
+
+new_snail_data <- data.frame(temp = 25, humid = 60)
+predict(lm_snail, new_snail_data, interval = 'prediction', level = 0.95)
+```
+Water Content: 76.437%
+
+# Question 5B
+```{r}
+new_snail_data1 <- data.frame(temp = 30, humid = 75)
+predict(lm_snail, new_snail_data1, interval = 'prediction', level = 0.95)
+```
+Water Content: 82.6225% 
+
+I think these two predictions are valid because they don’t require extrapolation of the response or the predictors. And it makes intuitive sense that higher humidity and temperature could cause, or be correlated with, higher water content in snail tissue. 
+
+# Question 6
+```{r}
+data(odor)
+lm_odor_temp <- lm(odor ~ temp, data = odor)
+summary(lm_odor_temp)
+
+lm_odor_full <- lm(odor ~ temp + gas + pack, data = odor)
+summary(lm_odor_full)
+
+lm_odor_temp_gas <- lm(odor ~ temp + gas, data = odor)
+summary(lm_odor_temp_gas)
+
+lm_odor_temp_pack <- lm(odor ~ temp + pack, data = odor)
+summary(lm_odor_temp_pack)
+```
+The coefficient for temperature stays the same in each model, but the standard error decreases. Standard error decreases the most in the full model, which causes it to have the highest t value and thus the lowest p value, meaning the full model is likely the best. 
+
+I think that there could be a causal interpretation where a higher temperature causes a lower odor, but I’m not a chemist, so it’s hard to know for sure. The p-values suggest there is likely no causal mechanism, but that could also be the result of the small sample size. 
+
+# Question 7
+```{r}
+data(teengamb)
+
+lm_gamble <- lm(gamble ~ sex + status + income + verbal, data = teengamb)
+summary(lm_gamble)
+
+lm_gamble2 <- lm(gamble ~ sex + income + income:sex, data = teengamb)
+summary(lm_gamble2)
+```
+My final model shows that when you include the interaction term between sex and income (which is significant), then sex is no longer a significant predictor, but income still is. 
+
+The model for a man (sex=0) is
+
+Y = -2.6596 + 6.5181 xincome
+
+The model for a woman (sex=1) is 
+
+Y = -2.6596 + 5.7996 xsex + 6.5181 xincome - 6.3432  xincome xsex
+Y = 3.1394 + 0.1749 xincome
+
+So a unit increase in income will have a much larger effect on gambling spending for men than for women. 
+
+

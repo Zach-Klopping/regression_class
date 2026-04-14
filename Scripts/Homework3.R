@@ -17,8 +17,8 @@ mod <- lm(TOV ~ AST, data=nba_total2)
 sumary(mod)
 mod1 <- lm(TOV ~ AST + MP + FGA, data=nba_total2)
 sumary(mod1)
-mod1 <- lm(TOV ~ AST + FGA, data=nba_total2)
-summary(mod1)
+mod2 <- lm(TOV ~ AST + FGA, data=nba_total2)
+summary(mod2)
 
 # Problem Three
 data(cheddar)

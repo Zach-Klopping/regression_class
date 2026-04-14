@@ -1,0 +1,100 @@
+---
+title: "Homework 6"
+output:
+  pdf_document: default
+  html_document: default
+editor_options:
+  chunk_output_type: console
+---
+```{r, message = FALSE, warning = FALSE}
+library(faraway)
+library(car)
+library(MASS)
+```
+
+# Question One
+```{r}
+data(cheddar)
+lm_cheddar <- lm(taste ~ Acetic + H2S + Lactic, data=cheddar)
+
+# Partial (Component) Residual Plot
+crPlots(lm_cheddar)
+
+# Added Variable Plot
+avPlots(lm_cheddar)
+```
+
+Added variable plots suggest Acetic isn’t a very useful predictor when H2S and Lactic are in the model. The partial residual plots suggest that the relationships between each predictor and the response are linear, so we don’t need to worry about a transformation. The added variable plots also suggest that observation 15 could be an outlier for each predictor-response relationship, as it seems to be quite far above the line. However, it doesn’t appear to be a leverage point. Point 26 could be a leverage point with respect to the H2S predictor, but not the other predictors. 
+
+# Question 2A
+```{r}
+data(tvdoctor)
+lm_doctor <- lm(life ~ tv + doctor, data=tvdoctor)
+
+# Assessing Assumptions
+plot(lm_doctor)
+```
+
+Looking at the square root of the standardized residual plot and the residuals versus leverage plot, it appears Ethiopia is likely an influential point as it is both an outlier and a leverage point.  Looking at the QQ Plot, the normality assumption appears to be largely satisfied. It is difficult to assess non-constant variance as almost all of the data is clustered around a couple of fitted values. I would say the data doesn’t satisfy the constant variance assumption, but if we removed Ethiopia, it likely would. 
+
+# Question 2B
+```{r}
+# Assessing Linearity
+crPlots(lm_doctor)
+
+# Assessing Influential Points
+avPlots(lm_doctor)
+```
+
+Looking at the added residual plots. For the doctor predictor, Ethiopia appears to be an influential point. Myanmar appears to be a large leverage point, and Sudan looks to be an outlier (possibly influential). For the tv predictor, Myanmar again appears to be a large leverage point. Bangladesh and Pakistan look like they could be outliers as well. No concerning multicollinearity between the two predictors.Both partial residual plots display a functional form; I would approximate it with 1/x. This suggests we need to transform both of our predictors, maybe with a log transformation or 1/x. 
+
+# Question 3A
+```{r}
+data(prostate)
+lm_prostate <- lm(lpsa ~ lcavol + lweight + age + lbph + svi + lcp + 
+                    gleason + pgg45, data=prostate)
+
+# Correlation Matrix (for predictors)
+cor(prostate)
+```
+The only correlation above 0.7 is gleason score (gleason) and percentage gleason scores 4 or 5 (pgg45) at 0.75. It makes intuitive sense that these would be highly correlated. 
+
+Seminal vesicle invasion (svi), log cancer volume (lcavol), and pgg45 are all correlated with lcp (log capsular penetration) at values between 0.6 and 0.7. Combined, this could create some multicollinearity and suggest that lcp might not be a very useful predictor when the others are in the model. 
+
+# Question 3B
+```{r}
+# Variance Inflation Factor (assesses multicollinearity)
+vif(lm_prostate)
+1 - 1/3.097954
+```
+None of these variance inflation factors is particularly large. The largest R^2k is for the predictor xk = lcp (as predicted above). This value is 0.677. 
+
+
+# Question Four
+```{r}
+data(cornnit)
+
+lm_corn <- lm(yield ~ nitrogen, data=cornnit)
+
+# Box Cox Plot
+box_cox_transformation <- boxcox(lm_corn, lambda = seq(0, 6))
+
+# MLE for Lambda
+print(box_cox_transformation$x[which.max(box_cox_transformation$y)])
+
+# F Test
+lm_corn2 <- lm(I(yield^3) ~ nitrogen, data=cornnit)
+anova(lm_corn2)
+```
+Box-Cox transformation suggests the MLE for lambda is 2.7, so we should transform our response by y3. With this transformation, nitrogen is a highly significant predictor, although it is highly significant without the transformation as well. 
+
+
+
+
+
+
+
+
+
+
+

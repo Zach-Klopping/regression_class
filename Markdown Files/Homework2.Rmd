@@ -1,0 +1,83 @@
+---
+title: "Homework 2"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r, message = FALSE, warning = FALSE}
+library(faraway)
+library(readr)
+le_gdp <- read.csv(here::here("Data", "lifeexp_gdp.csv"))
+```
+
+# Question 1A
+```{r}
+head(le_gdp)
+```
+
+# Question 1B
+```{r}
+nrow(le_gdp)
+```
+
+# Question 1C
+Because it’s likely the wealth, and thus the resources of the country, will contribute to better healthcare, which could cause people to live longer. 
+
+# Question 1D
+```{r}
+plot(le_gdp$gdp, le_gdp$life_exp, xlab="GDP", ylab="Life Expectancy")
+```
+
+# Question 1E
+```{r}
+log_gdp <- log(le_gdp$gdp)
+plot(log_gdp, le_gdp$life_exp, xlab="log(GDP)", ylab="Life Expectancy")
+```
+Yes, this looks like a linear relationship. 
+
+# Question 1F
+```{r}
+m1 <- lm(le_gdp$life_exp ~ log_gdp)
+summary(m1)
+anova(m1)
+```
+
+# Question 1G
+(Residual Standard Error)2 = 4.7832=22.877
+
+# Question 1H
+RSS = 22.877(163) = 3728.95
+TSS = 7071.5 + 3728.7 = 10800.2 (used ANOVA table) 
+R2= 1 - 3728.9510800.2= 0.6547564 
+This appears under Multiple R-squared:  0.6548
+
+# Question 1I
+5.3860 years
+
+# Question 2A
+```{r}
+data(teengamb)
+mod1 <- lm(gamble ~ sex + status + income + verbal, data=teengamb)
+summary(mod1)
+```
+Income and Sex are significant at the 0.05 level.
+
+# Question 2B
+22.12 pounds more than the female. 
+
+# Question 2C
+22.692(42) = 21623.12 = RSS
+
+
+
+
+
+
+
+
+
+
+
+
+
