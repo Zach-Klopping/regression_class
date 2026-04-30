@@ -1,0 +1,323 @@
+Row,Month,Year,Age,Source,Blood_ppm,Censored,Liver_ppm,Bone_ppm,Blood_lead_level,Liver_lead_level,Bone_lead_level,Lead_level_code,X_ray_results,County_found,Outcome,Comments,Released
+1,January,2004,NA,Macbride,0.094,0,NA,NA,B,NA,NA,B,NA,NA,EU,NA,NotR
+2,February,2004,adult,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,N,Woodbury,R,NA,R
+3,July,2004,adult,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,PS,Buena Vista,UNR,**shot with high power rifle **UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+4,October,2004,<1,SOAR,0.09,0,NA,NA,B,NA,NA,B,N,Calhoun,R,NA,R
+5,December,2004,adult,SOAR,NA,NA,21,NA,NA,C,NA,C,N,Kossuth,Died,NA,NotR
+6,December,2004,adult,SOAR,2,0,NA,NA,C,NA,NA,C,PG,Sioux,Died,NA,NotR
+7,December,2004,<1,SOAR,1.7,0,NA,NA,C,NA,NA,C,N,Sioux,Died,NA,NotR
+8,December,2004,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,PS,NA,R,NA,R
+9,January,2005,<1,SOAR,1.13,0,NA,NA,C,NA,NA,C,N,Woodbury,UNR,**UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+10,February,2005,juvenile,SOAR,0.06,0,NA,NA,B,NA,NA,B,N,Dallas,R,NA,R
+11,February,2005,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,PG,NA,Died,NA,NotR
+12,February,2005,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,PG,NA,Died,NA,NotR
+13,March,2005,adult,SOAR,NA,NA,32,NA,NA,C,NA,C,N,Dallas,Died,NA,NotR
+14,March,2005,adult,SOAR,0.1,0,NA,NA,B,NA,NA,B,N,Lyon,R,NA,R
+15,March,2005,adult,SOAR,0.1,0,NA,NA,B,NA,NA,B,N,Marion,R,NA,R
+16,March,2005,adult,SOAR,NA,NA,7.5,NA,NA,C,NA,C,N,Woodbury,Died,NA,NotR
+17,March,2005,NA,Macbride,0.1,0,NA,NA,B,NA,NA,B,NA,NA,R,NA,R
+18,March,2005,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,PG,NA,EU,NA,NotR
+19,March,2005,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,PG,NA,EU,NA,NotR
+20,March,2005,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,DOA,NA,NotR
+21,March,2005,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,DOA,NA,NotR
+22,April,2005,<1,SOAR,0.3,0,NA,NA,SC,NA,NA,SC,N,Buena Vista,UNR,**UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+23,November,2005,adult,WCC,8,0,NA,NA,C,NA,NA,C,N,Marshall,Died,NA,NotR
+24,November,2005,NA,Macbride,0.17,0,NA,NA,B,NA,NA,B,N,NA,R,NA,R
+25,November,2005,NA,Macbride,1.19,0,NA,NA,C,NA,NA,C,PG,NA,EU,NA,NotR
+26,December,2005,juvenile,SOAR,9.3,0,NA,NA,C,NA,NA,C,PS,Clay,EU,**.22 bullet ingested,NotR
+27,December,2005,juvenile,WCC,6,0,NA,NA,C,NA,NA,C,NA,Jasper,Died,NA,NotR
+28,December,2005,NA,Macbride,0.65,0,NA,NA,C,NA,NA,C,N,NA,Died,NA,NotR
+29,January,2006,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Cedar,EU,NA,NotR
+30,January,2006,NA,Macbride,0.22,0,NA,NA,SC,NA,NA,SC,NA,Linn,EU,NA,NotR
+31,January,2006,<1,SOAR,0.12,0,NA,NA,B,NA,NA,B,NA,Shelby,Died,NA,NotR
+32,February,2006,adult,SOAR,NA,NA,5,NA,NA,SC,NA,SC,N,Marion,DOA,NA,NotR
+33,February,2006,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,N,NA,EU,NA,NotR
+34,March,2006,adult,SOAR-OIWI,NA,NA,9,NA,NA,C,NA,C,N,Dickinson,Died,NA,NotR
+35,March,2006,juvenile,SOAR,0.06,0,NA,NA,B,NA,NA,B,N,Polk,Died,NA,NotR
+36,March,2006,adult,SOAR,NA,NA,7,NA,NA,C,NA,C,NA,Union,Died,NA,NotR
+37,March,2006,NA,SOAR-OIWI,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Died,NA,NotR
+38,April,2006,NA,SOAR-RR,NA,NA,NA,NA,NA,NA,NA,NA,NA,Allamakee,Died,NA,NotR
+39,April,2006,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,R,NA,R
+40,June,2006,adult,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,PS,Fremont,R,**#6 shot lodged in breast muscle - opposite side to humerus fx,R
+41,September,2006,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Jones,Died,NA,NotR
+42,November,2006,adult,Macbride,0.017,0,NA,NA,B,NA,NA,B,N,Cedar,R,**transferred to TRC,R
+43,November,2006,adult,Macbride,0.3,0,NA,NA,SC,NA,NA,SC,PS,Hardin,R,**gunshot,R
+44,November,2006,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,N,Tama,Died,NA,NotR
+45,December,2006,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,PS,Linn,DOA,**gunshot,NotR
+46,December,2006,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,N,Louisa,Died,NA,NotR
+47,December,2006,adult,SOAR,NA,NA,45,NA,NA,C,NA,C,NA,Polk,Died,NA,NotR
+48,December,2006,adult,Macbride,0.2,0,NA,NA,SC,NA,NA,SC,N,Washington,EU,NA,NotR
+49,January,2007,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,PS,Benton,Died,"**gunshot, negative for ingested lead",NotR
+50,January,2007,<1,SOAR,NA,NA,2,NA,NA,SC,NA,SC,N,Carroll,DOA,NA,NotR
+51,January,2007,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Jones,DOA,"**Data says ""none taken""",NotR
+52,January,2007,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,PS,Louisa,EU,**gunshot / negative for ingested lead,NotR
+53,January,2007,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Washington,Died,NA,NotR
+54,February,2007,juvenile,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,N,Johnson,DOA,NA,NotR
+55,March,2007,adult,SOAR,NA,NA,55,NA,NA,C,NA,C,N,Guthrie,Died,NA,NotR
+56,March,2007,juvenile,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,N,Louisa,EU,NA,NotR
+57,March,2007,adult,WCC,NA,NA,NA,NA,NA,NA,NA,NA,NA,Story,EU,NA,NotR
+58,March,2007,NA,SOAR-IDNR,0.65,1,NA,NA,C,NA,NA,C,NA,Taylor,Died,NA,NotR
+59,March,2007,NA,SOAR-IDNR,NA,NA,NA,NA,NA,NA,NA,NA,NA,Taylor,DOA,NA,NotR
+60,March,2007,NA,SOAR-IDNR,NA,NA,NA,NA,NA,NA,NA,NA,PS,Taylor,DOA,**gunshot,NotR
+61,April,2007,adult,SOAR,NA,NA,30,NA,NA,C,NA,C,N,Kossuth,DOA,NA,NotR
+62,July,2007,<1,SOAR,0,0,NA,NA,NA,NA,NA,NA,N,Marion,R,NA,R
+63,September,2007,adult,Macbride,0.1,0,NA,NA,B,NA,NA,B,N,Bremer,R,**transferred to TRC,R
+64,October,2007,juvenile,SOAR,0.16,0,NA,NA,B,NA,NA,B,PS,Dickinson,R,"**negative for lead in digestive tract, shot with lead #6s",R
+65,October,2007,NA,Macbride,0.62,0,NA,NA,C,NA,NA,C,N,Linn,EU,NA,NotR
+66,November,2007,juvenile,WCC,0.05,0,NA,NA,B,NA,NA,B,N,Butler,R,NA,R
+67,November,2007,adult,SOAR,NA,NA,30,NA,NA,C,NA,C,N,Carroll,Died,NA,NotR
+68,November,2007,NA,Macbride,0.1,0,NA,NA,B,NA,NA,B,N,Wapello,EU,NA,NotR
+69,December,2007,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,N,Black Hawk,EU,NA,NotR
+70,December,2007,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,N,Jackson,EU,NA,NotR
+71,December,2007,adult,SOAR,NA,NA,22,NA,NA,C,NA,C,N,Marion,DOA,NA,NotR
+72,January,2008,adult,SOAR,NA,NA,1,NA,NA,B,NA,B,NA,Mahaska,DOA,NA,NotR
+73,January,2008,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,NA,EU,NA,NotR
+74,January,2008,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,PG,NA,DOA,**lead pellet in digestive tract,NotR
+75,February,2008,adult,SOAR-BHWRP,NA,NA,1,NA,NA,B,NA,B,N,Black Hawk,DOA,NA,NotR
+76,February,2008,NA,MacBride,0.025,0,NA,NA,B,NA,NA,B,NA,Keokuk,EU,NA,NotR
+77,February,2008,adult,SOAR,NA,NA,18,NA,NA,C,NA,C,N,Mills,Died,NA,NotR
+78,February,2008,adult,SOAR,0.12,0,NA,NA,B,NA,NA,B,N,Montegomery,R,NA,R
+79,March,2008,juvenile,WCC,0.248,0,NA,NA,SC,NA,NA,SC,N,Madison,R,NA,R
+80,March,2008,adult,SOAR,NA,NA,NA,14,NA,NA,SC,SC,N,Woodbury,DOA,NA,NotR
+81,March,2008,NA,Macbride,0.011,0,NA,NA,B,NA,NA,B,NA,NA,EU,NA,NotR
+82,April,2008,juvenile,SOAR,NA,NA,36,NA,NA,C,NA,C,N,Greene,DOA,NA,NotR
+83,May,2008,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,PS,NA,DOA,**3 pellets in body,NotR
+84,June,2008,<1,WCC,NA,NA,NA,NA,NA,NA,NA,NA,NA,Floyd,EU,NA,NotR
+85,July,2008,<1,SOAR,0.01,0,NA,NA,B,NA,NA,B,N,Marion,R,NA,R
+86,August,2008,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,DOA,NA,NotR
+87,November,2008,adult,SOAR,2.22,0,NA,NA,C,NA,NA,C,NA,Carroll,R,NA,R
+88,November,2008,<1,SOAR,0,0,NA,NA,NA,NA,NA,NA,PS,Monona,Died,**shot with #2 steel,NotR
+89,December,2008,adult,SOAR,0.38,0,NA,NA,SC,NA,NA,SC,NA,Boone,UNR,**0.279 ppm in blood LeadCare;  0.38 Antech (sent to lab for comparison to inhouse); **UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+90,December,2008,adult,SOAR-IDNR,NA,NA,NA,NA,NA,NA,NA,NA,NA,Humboldt,DOA,NA,NotR
+91,December,2008,NA,Macbride,0.105,0,NA,NA,B,NA,NA,B,NA,Jones,EU,NA,NotR
+92,December,2008,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,NA,EU,NA,NotR
+93,January,2009,juvenile,SOAR,NA,NA,2.7,NA,NA,SC,NA,SC,PG,Carroll,DOA,**pepper-size lead fragments in digestive tract,NotR
+94,January,2009,adult,SOAR-IDNR,NA,NA,9,NA,NA,C,NA,C,N,Dallas,DOA,NA,NotR
+95,January,2009,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Linn,EU,NA,NotR
+96,January,2009,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Linn,DOA,NA,NotR
+97,January,2009,adult,SOAR,NA,NA,62,NA,NA,C,NA,C,N,Marion,DOA,NA,NotR
+98,February,2009,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Appanoose,EU,NA,NotR
+99,February,2009,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Dubuque,EU,NA,NotR
+100,February,2009,adult,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Guthrie,DOA,NA,NotR
+101,February,2009,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Johnson,Died,NA,NotR
+102,February,2009,NA,Macbride,0.105,0,NA,NA,B,NA,NA,B,NA,Keokuk,EU,NA,NotR
+103,February,2009,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Linn,DOA,NA,NotR
+104,February,2009,NA,Macbride,0.127,0,NA,NA,B,NA,NA,B,NA,Louisa,EU,NA,NotR
+105,February,2009,adult,SOAR,0.354,0,NA,NA,SC,NA,NA,SC,NA,Mahaska,Died,NA,NotR
+106,February,2009,adult,SOAR,NA,NA,21,NA,NA,C,NA,C,PS,Mills,DOA,**negative for ingested lead - shot with #6 lead,NotR
+107,February,2009,adult,SOAR,NA,NA,8.4,NA,NA,C,NA,C,N,Webster,DOA,NA,NotR
+108,March,2009,juvenile,SOAR,NA,NA,NA,23,NA,NA,C,C,N,Cass,DOA,NA,NotR
+109,March,2009,juvenile,SOAR,NA,NA,NA,363,NA,NA,C,C,N,Cass,DOA,NA,NotR
+110,March,2009,adult,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,NA,Clay,R,NA,R
+111,March,2009,NA,Macbride,0.146,0,NA,NA,B,NA,NA,B,NA,Clinton,EU,NA,NotR
+112,March,2009,NA,WCC,NA,NA,1.1,NA,NA,B,NA,B,N,Delaware,DOA,NA,NotR
+113,March,2009,adult,SOAR,0.216,0,NA,NA,SC,NA,NA,SC,NA,Harrison,Died,NA,NotR
+114,March,2009,adult,SOAR,0.154,0,NA,NA,B,NA,NA,B,NA,Lyon,UNR,**UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+115,March,2009,adult,SOAR,NA,NA,37,NA,NA,C,NA,C,N,Marion,DOA,NA,NotR
+116,March,2009,adult,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Polk,EU,NA,NotR
+117,March,2009,adult,SOAR,NA,NA,32,NA,NA,C,NA,C,N,Warren,Died,NA,NotR
+118,March,2009,adult,SOAR,NA,NA,54,NA,NA,C,NA,C,PG,Woodbury,DOA,**one #6 lead shot in digestive tract,NotR
+119,April,2009,adult,SOAR,NA,NA,NA,51,NA,NA,C,C,N,Marion,DOA,NA,NotR
+120,April,2009,adult,SOAR,NA,NA,NA,53,NA,NA,C,C,N,Marion,DOA,**fish bones in gut :),NotR
+121,May,2009,juvenile,Macbride,0.032,0,NA,NA,B,NA,NA,B,NA,Allamakee,EU,NA,NotR
+122,May,2009,juvenile,SOAR,0.84,0,NA,NA,C,NA,NA,C,NA,Dallas,R,**0.54 ppm in blood (0.84 Antech),R
+123,July,2009,adult,Macbride,0.068,0,NA,NA,B,NA,NA,B,NA,Linn,R,NA,R
+124,July,2009,<1,SOAR,0.005,0,NA,NA,B,NA,NA,B,NA,Marion,R,NA,R
+125,July,2009,<1,SOAR,0.002,0,NA,NA,B,NA,NA,B,NA,Marion,R,NA,R
+126,July,2009,juvenile,SOAR,0.005,0,NA,NA,B,NA,NA,B,NA,Marion,R,NA,R
+127,November,2009,<1,SOAR,0.002,0,NA,NA,B,NA,NA,B,NA,Calhoun,R,NA,R
+128,November,2009,NA,Macbride,0.016,0,NA,NA,B,NA,NA,B,NA,NA,Died,NA,NotR
+129,November,2009,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,NA,EU,NA,NotR
+130,December,2009,juvenile,BLACKHAWK,5.6,0,NA,NA,C,NA,NA,C,N,Black Hawk,Died,NA,NotR
+131,December,2009,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,N,Monona,Died,NA,NotR
+132,December,2009,<1,SOAR,0.098,0,NA,NA,B,NA,NA,B,NA,Sioux,R,NA,R
+133,January,2010,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Dubuque,EU,NA,NotR
+134,January,2010,adult,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,NA,Polk,Died,NA,NotR
+135,February,2010,adult,Macbride,0.145,0,NA,NA,B,NA,NA,B,NA,Benton,EU,NA,NotR
+136,February,2010,adult,SOAR,0.25,0,NA,NA,SC,NA,NA,SC,NA,Polk,Died,NA,NotR
+137,February,2010,adult,Macbride,0.045,0,NA,NA,B,NA,NA,B,NA,NA,R,NA,R
+138,March,2010,juvenile,Macbride,0.178,0,NA,NA,B,NA,NA,B,NA,Jones,EU,NA,NotR
+139,March,2010,juvenile,Macbride,0.088,0,NA,NA,B,NA,NA,B,N,Keokuk,EU,NA,NotR
+140,March,2010,juvenile,SOAR,0.19,0,NA,NA,B,NA,NA,B,NA,Kossuth,Died,"**no xray taken ""pelleted - could not stand""",NotR
+141,March,2010,adult,Macbride,0.156,0,NA,NA,B,NA,NA,B,NA,Lee,EU,**no xray taken,NotR
+142,March,2010,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,PG,Linn,DOA,**lead pellet in digestive tract,NotR
+143,March,2010,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,PS,Linn,DOA,**gunshot wound - lead shot throughout,NotR
+144,March,2010,adult,Macbride,0.018,0,NA,NA,B,NA,NA,B,PS,Washington,Died,**gunshot wound - internal injuries,NotR
+145,March,2010,NA,BLACKHAWK,0.1,0,NA,NA,B,NA,NA,B,NA,NA,Died,NA,NotR
+146,March,2010,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,NA,EU,NA,NotR
+147,August,2010,<1,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Cerro Gordo,Died,NA,NotR
+148,August,2010,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Clayton,Died,"**HBC, no xray",NotR
+149,September,2010,<1,SOAR,0.002,0,NA,NA,B,NA,NA,B,NA,Carroll,R,"**eye injury, no xray",R
+150,September,2010,NA,Macbride,0,0,NA,NA,NA,NA,NA,NA,N,Clinton,EU,NA,NotR
+151,September,2010,adult,Macbride,0.11,0,NA,NA,B,NA,NA,B,N,Delaware,EU,NA,NotR
+152,September,2010,adult,WCC,NA,NA,NA,NA,NA,NA,NA,NA,N,Marshall,EU,NA,NotR
+153,November,2010,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Jones,Died,NA,NotR
+154,November,2010,juvenile,Macbride,0.05,0,NA,NA,B,NA,NA,B,NA,Poweshiek,EU,"**no xray, compound humerus fx",NotR
+155,December,2010,juvenile,SOAR,NA,NA,1,NA,NA,B,NA,B,PS,Carroll,DOA,**no fragments on x-ray - gunshot through and through crop/neck,NotR
+156,January,2011,juvenile,Macbride,0.46,0,NA,NA,SC,NA,NA,SC,NA,Fayette,Died,NA,NotR
+157,January,2011,juvenile,Macbride,0.137,0,NA,NA,B,NA,NA,B,NA,Muscatine,EU,"**HBC, no xray",NotR
+158,February,2011,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,N,Clayton,DOA,NA,NotR
+159,February,2011,adult,Macbride,0.474,0,NA,NA,SC,NA,NA,SC,NA,Dubuque,R,NA,R
+160,February,2011,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,N,Linn,DOA,NA,NotR
+161,February,2011,adult,Macbride,0.104,0,NA,NA,B,NA,NA,B,NA,Louisa,EU,"**HBC, no xray",NotR
+162,February,2011,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,NA,EU,NA,NotR
+163,March,2011,adult,SOAR,NA,NA,33.9,NA,NA,C,NA,C,N,Adams,DOA,NA,NotR
+164,March,2011,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,N,Cedar,R,NA,R
+165,March,2011,juvenile,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Greene,DOA,NA,NotR
+166,March,2011,juvenile,SOAR,0.031,0,NA,NA,B,NA,NA,B,N,Greene,Died,NA,NotR
+167,March,2011,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,N,Johnson,EU,NA,NotR
+168,March,2011,juvenile,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Linn,DOA,NA,NotR
+169,March,2011,adult,SOAR,0.156,0,NA,NA,B,NA,NA,B,N,Lyon,UNR,**UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+170,March,2011,juvenile,SOAR-USFWS,NA,NA,NA,NA,NA,NA,NA,NA,NA,Marion,DOA,NA,NotR
+171,March,2011,adult,Macbride,0.073,0,NA,NA,B,NA,NA,B,NA,NA,R,"**tissue wounds, no xray",R
+172,March,2011,adult,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Plymouth,DOA,NA,NotR
+173,March,2011,adult,SOAR,0.03,0,NA,NA,B,NA,NA,B,N,Winnebago,UNR,**UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+174,April,2011,adult,SOAR,NA,NA,2,NA,NA,SC,NA,SC,N,Calhoun,DOA,NA,NotR
+175,April,2011,adult,Macbride,0.104,0,NA,NA,B,NA,NA,B,NA,Jackson,R,NA,R
+176,April,2011,adult,SOAR,0.05,0,NA,NA,B,NA,NA,B,NA,Marion,Died,NA,NotR
+177,June,2011,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Delaware,Died,NA,NotR
+178,June,2011,<1,Macbride,0.02,0,NA,NA,B,NA,NA,B,NA,NA,R,NA,R
+179,July,2011,<1,Macbride,0.008,0,NA,NA,B,NA,NA,B,NA,Louisa,R,NA,R
+180,July,2011,<1,SOAR,0.006,0,NA,NA,B,NA,NA,B,NA,Palo Alto,R,"**gash on leg, did not xray",R
+181,July,2011,juvenile,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Story,Died,NA,NotR
+182,September,2011,adult,SOAR,NA,NA,1,NA,NA,B,NA,B,NA,Marion,DOA,"**HBC, not xrayed",NotR
+183,September,2011,juvenile,SOAR,0.119,0,NA,NA,B,NA,NA,B,N,Winneshiek,R,NA,R
+184,October,2011,juvenile,Macbride,0.11,0,NA,NA,B,NA,NA,B,NA,Jackson,EU,NA,NotR
+185,November,2011,NA,BLACKHAWK,9.3,0,NA,NA,C,NA,NA,C,NA,Black Hawk,Died,NA,NotR
+186,November,2011,juvenile,SOAR,0.114,0,NA,NA,B,NA,NA,B,NA,Dickinson,R,NA,R
+187,November,2011,adult,Macbride,0.136,0,NA,NA,B,NA,NA,B,NA,Jones,R,NA,R
+188,November,2011,juvenile,SOAR,0.123,0,NA,NA,B,NA,NA,B,NA,Winneshiek,Died,NA,NotR
+189,December,2011,NA,Macbride,0.177,0,NA,NA,B,NA,NA,B,NA,Linn,EU,NA,NotR
+190,December,2011,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Linn,EU,NA,NotR
+191,December,2011,adult,SOAR,NA,NA,48,NA,NA,C,NA,C,N,Winneshiek,DOA,NA,NotR
+192,December,2011,adult,SOAR,0.1,0,NA,NA,B,NA,NA,B,PG,Wright,R,**lead fragments in deer hair pellet,R
+193,January,2012,adult,BLACKHAWK,NA,NA,26.3,NA,NA,C,NA,C,N,Bremer,Died,NA,NotR
+194,January,2012,adult,SOAR,0.153,0,NA,NA,B,NA,NA,B,N,Dallas,EU,NA,NotR
+195,January,2012,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,N,Dallas,R,NA,R
+196,January,2012,juvenile,Macbride,0.025,0,NA,NA,B,NA,NA,B,NA,Delaware,R,NA,R
+197,January,2012,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Linn,DOA,NA,NotR
+198,January,2012,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Louisa,EU,NA,NotR
+199,January,2012,adult,WCC,NA,NA,21.8,NA,NA,C,NA,C,NA,Polk,DOA,NA,NotR
+200,January,2012,adult,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Shelby,DOA,NA,NotR
+201,February,2012,adult,SOAR,0.342,0,NA,NA,SC,NA,NA,SC,N,Adair,EU,NA,NotR
+202,February,2012,juvenile,BLACKHAWK,0.14,0,NA,NA,B,NA,NA,B,NA,Black Hawk,R,NA,R
+203,February,2012,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,N,Franklin,Died,**>0 .65 ppm in blood; 5.5 ppm lead in liver,NotR
+204,February,2012,NA,Macbride,0.126,0,NA,NA,B,NA,NA,B,NA,Johson,EU,NA,NotR
+205,February,2012,adult,Macbride,0.334,0,NA,NA,SC,NA,NA,SC,NA,Muscatine,EU,NA,NotR
+206,February,2012,adult,WCC,0.084,0,NA,NA,B,NA,NA,B,NA,Union,R,NA,R
+207,February,2012,adult,WCC,0.6,0,NA,NA,C,NA,NA,C,NA,Union,Died,NA,NotR
+208,February,2012,adult,WCC,0.0094,0,NA,NA,B,NA,NA,B,NA,Union,Died,"** 9.4 ppb, which is 0.0094 ppm",NotR
+209,February,2012,juvenile,Macbride,0.449,0,NA,NA,SC,NA,NA,SC,NA,NA,EU,NA,NotR
+210,March,2012,juvenile,SOAR,0.11,0,NA,NA,B,NA,NA,B,N,Adair,DOA,NA,NotR
+211,March,2012,adult,SOAR,NA,NA,NA,NA,NA,B,NA,B,N,Adair,DOA,"** No elevated lead in liver, tested Wildlife Health Center, Madison, Report says, ""Liver lead was not elevated"" so would consider background",NotR
+212,March,2012,adult,SOAR,NA,NA,8.4,NA,NA,C,NA,C,N,Audubon,DOA,**>0.65 ppm in heart blood; 8.4 ppm in liver,NotR
+213,March,2012,juvenile,BLACKHAWK,0.022,0,NA,NA,B,NA,NA,B,NA,Black Hawk,EU,NA,NotR
+214,March,2012,adult,SOAR,NA,NA,14.3,NA,NA,C,NA,C,N,Boone,DOA,**> 0.65 ppm in heart blood; 14.3 ppm lead in liver,NotR
+215,March,2012,adult,Macbride,0.167,0,NA,NA,B,NA,NA,B,NA,Dubuque,EU,NA,NotR
+216,March,2012,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Dubuque,Died,NA,NotR
+217,March,2012,NA,Macbride,0.063,0,NA,NA,B,NA,NA,B,NA,Linn,R,NA,R
+218,March,2012,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Linn,DOA,NA,NotR
+219,March,2012,adult,SOAR,0.13,0,NA,NA,B,NA,NA,B,N,Mitchell,EU,NA,NotR
+220,March,2012,juvenile,SOAR,0.65,1,NA,NA,C,NA,NA,C,PG,Palo Alto,Died,**tiny lead fragment in gi tract  **> 0.65 ppm in blood - 38.4 ppm lead in liver,NotR
+221,March,2012,adult,SOAR,0.07,0,NA,NA,B,NA,NA,B,N,Woodbury,EU,NA,NotR
+222,March,2012,NA,WCC,4,0,NA,NA,C,NA,NA,C,NA,NA,Died,NA,NotR
+223,March,2012,NA,Macbride,0.42,0,NA,NA,SC,NA,NA,SC,NA,NA,Died,NA,NotR
+224,April,2012,adult,BLACKHAWK,0.16,0,NA,NA,B,NA,NA,B,N,Black Hawk,R,NA,R
+225,April,2012,adult,SOAR,0.15,0,NA,NA,B,NA,NA,B,N,Dickinson,Died,**0.15 ppm in blood and < 1 ppm in liver,NotR
+226,April,2012,adult,SOAR,0.45,0,NA,NA,SC,NA,NA,SC,N,Dickinson,Died,**0.45 ppm in blood and 4.2 ppm in liver,NotR
+227,April,2012,adult,SOAR,NA,NA,24.3,NA,NA,C,NA,C,PS,Floyd,DOA,**>0 .65 ppm in heart blood and 24.3 ppm in liver,NotR
+228,April,2012,<1,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,NA,Webster,R,NA,R
+229,June,2012,adult,Macbride,0.034,0,NA,NA,B,NA,NA,B,N,Clayton,EU,NA,NotR
+230,July,2012,juvenile,BLACKHAWK,0.001,0,NA,NA,B,NA,NA,B,NA,Black Hawk,R,NA,R
+231,August,2012,adult,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Marion,EU,NA,NotR
+232,September,2012,<1,Macbride,5e-4,0,NA,NA,B,NA,NA,B,NA,Louisa,R,NA,R
+233,September,2012,adult,Macbride,0.041,0,NA,NA,B,NA,NA,B,NA,Jefferson,EU,NA,NotR
+234,October,2012,<1,SOAR,0.04,0,NA,NA,B,NA,NA,B,NA,Dickinson,Died,"**BLL =  0.04 ppm, liver lead test <0.5 ppm, bone lead test = 9.0 ppm",NotR
+235,November,2012,adult,BLACKHAWK,NA,NA,41,NA,NA,C,NA,C,NA,Hardin,DOA,NA,NotR
+236,November,2012,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,N,Sioux,Died,NA,NotR
+237,November,2012,<1,SOAR,NA,NA,1,NA,NA,B,NA,B,NA,Webster,EU,**<1 ppm in liver and < 1 ppm in bone,NotR
+238,December,2012,adult,Macbride,0.478,0,NA,NA,SC,NA,NA,SC,PG,Clayton,R,**lead shrapnel in lower digestive tract,R
+239,December,2012,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,PG,Delaware,DOA,**lead shrapnel confirmed in digestive tract,NotR
+240,December,2012,adult,SOAR,0.169,0,NA,NA,B,NA,NA,B,NA,Guthrie,R,NA,R
+241,December,2012,adult,Macbride,0.155,0,NA,NA,B,NA,NA,B,N,Howard,R,NA,R
+242,December,2012,NA,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Linn,EU,NA,NotR
+243,December,2012,adult,SOAR,NA,NA,0.6,NA,NA,B,NA,B,PS,Monona,DOA,**rifle shot in leg,NotR
+244,January,2013,juvenile,SOAR,NA,NA,2.2,NA,NA,SC,NA,SC,N,Adams,DOA,**2.2 ppm in liver and 16.9 ppm in bone,NotR
+245,January,2013,adult,SOAR,0.255,0,NA,NA,SC,NA,NA,SC,NA,Carroll,Died,NA,NotR
+246,January,2013,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,N,Decatur,Died,** >0 .65 ppm in blood and 2.7 ppm in liver and 3.7 ppm in bone,NotR
+247,January,2013,adult,Macbride,0.12,0,NA,NA,B,NA,NA,B,N,Delaware,R,NA,R
+248,January,2013,adult,SOAR,0.331,0,NA,NA,SC,NA,NA,SC,NA,Dubuque,R,NA,R
+249,January,2013,juvenile,SOAR,NA,NA,1,NA,NA,B,NA,B,N,Greene,DOA,**< 1 ppm in liver and < 1 ppm in bone,NotR
+250,January,2013,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,PG,Page,Died,** >0.65 ppm in blood and 34.8 ppm in liver and 44.4 ppm in bone  **copper jacked lead core rifle bullet (.22mag),NotR
+251,January,2013,adult,BLACKHAWK,0.65,1,NA,NA,C,NA,NA,C,NA,Winneshiek,Died,NA,NotR
+252,February,2013,<1,SOAR,0.126,0,NA,NA,B,NA,NA,B,NA,Adair,EU,NA,NotR
+253,February,2013,adult,SOAR,NA,NA,23.8,NA,NA,C,NA,C,N,Adams,DOA,**23.8 ppm in liver and 9.5 ppm in bone,NotR
+254,February,2013,juvenile,BLACKHAWK,0.63,0,NA,NA,C,NA,NA,C,NA,Black Hawk,Died,NA,NotR
+255,February,2013,juvenile,BLACKHAWK,0.97,0,NA,NA,C,NA,NA,C,NA,Dubuque,Died,NA,NotR
+256,February,2013,juvenile,SOAR,NA,NA,5.7,NA,NA,SC,NA,SC,N,Guthrie,DOA,**5.7 ppm in liver and 3.5 ppm in bone,NotR
+257,February,2013,adult,SOAR,0.126,0,NA,NA,B,NA,NA,B,NA,Marion,R,NA,R
+258,February,2013,adult,Macbride,0.268,0,NA,NA,SC,NA,NA,SC,N,Muscatine,R,NA,R
+259,February,2013,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,NA,Wapello,Died,** >0.65 ppm in blood and 1.9 ppm in liver and 3.8 ppm in bone,NotR
+260,March,2013,juvenile,SOAR,0.026,0,NA,NA,B,NA,NA,B,NA,Allamakee,EU,NA,NotR
+261,March,2013,juvenile,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,PS,Carroll,DOA,NA,NotR
+262,March,2013,juvenile,SOAR,0.06,0,NA,NA,B,NA,NA,B,NA,Dallas,UNR,**UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+263,March,2013,adult,SOAR,0.206,0,NA,NA,SC,NA,NA,SC,N,O'Brien,Died,NA,NotR
+264,March,2013,adult,SOAR,0.118,0,NA,NA,B,NA,NA,B,NA,Palo Alto,R,NA,R
+265,March,2013,adult,Macbride,0.65,1,NA,NA,C,NA,NA,C,NA,Tama,EU,NA,NotR
+266,April,2013,adult,SOAR,0.01,0,NA,NA,B,NA,NA,B,NA,Dubuque,Died,NA,NotR
+267,May,2013,juvenile,SOAR,0.043,0,NA,NA,B,NA,NA,B,N,Adair,Died,NA,NotR
+268,May,2013,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,PG,Cerro Gordo,Died,**2 pieces #5 lead shot in GI tract; **> 0.65 ppm lead in blood; 1.1 ppm liver; 43.0 ppm bone,NotR
+269,May,2013,juvenile,SOAR,NA,NA,0.5,NA,NA,B,NA,B,PS,Floyd,DOA,**one #1 steel pellet lodged in back of eyeball,NotR
+270,June,2013,<1,SOAR,0.014,0,NA,NA,B,NA,NA,B,NA,Jasper,R,NA,R
+271,September,2013,adult,Macbride,0.012,0,NA,NA,B,NA,NA,B,N,Jackson,R,NA,R
+272,October,2013,adult,BLACKHAWK,NA,NA,13.1,NA,NA,C,NA,C,PG,Allamakee,Died,**Shrapnel in digestive tract,NotR
+273,November,2013,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,N,Carroll,Died,NA,NotR
+274,November,2013,<1,SOAR,50.6,0,NA,NA,C,NA,NA,C,PS,Greene,DOA,**outlier removed from statistics only,NotR
+275,November,2013,juvenile,SOAR,0.2,0,NA,NA,SC,NA,NA,SC,NA,Montegomery,R,NA,R
+276,November,2013,NA,Macbride,0.105,0,NA,NA,B,NA,NA,B,N,Wapello,R,NA,R
+277,November,2013,<1,SOAR,0.02,0,NA,NA,B,NA,NA,B,NA,Woodbury,R,NA,R
+278,December,2013,<1,Macbride,0.267,0,NA,NA,SC,NA,NA,SC,N,Dubuque,EU,NA,NotR
+279,December,2013,adult,Macbride,0.04,0,NA,NA,B,NA,NA,B,N,Linn,R,NA,R
+280,December,2013,adult,SOAR,NA,NA,52.8,NA,NA,C,NA,C,PG,Winneshiek,Died,**Shrapnel in digestive tract,NotR
+281,January,2014,juvenile,SOAR,0.215,0,NA,NA,SC,NA,NA,SC,NA,Greene,EU,NA,NotR
+282,January,2014,juvenile,SOAR,0.65,1,NA,NA,C,NA,NA,C,N,Marion,Died,NA,NotR
+283,January,2014,adult,WCC,2,0,NA,NA,C,NA,NA,C,NA,Story,EU,NA,NotR
+284,February,2014,adult,SOAR,0.65,1,NA,NA,C,NA,NA,C,NA,Allamakee,EU,NA,NotR
+285,February,2014,adult,Macbride,0.302,0,NA,NA,SC,NA,NA,SC,NA,Louisa,R,NA,R
+286,February,2014,juvenile,SOAR,0.458,0,NA,NA,SC,NA,NA,SC,N,Pottawattamie,Died,NA,NotR
+287,February,2014,adult,Macbride,0.65,0,NA,NA,C,NA,NA,C,NA,NA,Died,NA,NotR
+288,March,2014,adult,Macbride,0.65,0,NA,NA,C,NA,NA,C,NA,Jones,R,NA,R
+289,March,2014,NA,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Linn,DOA,NA,NotR
+290,March,2014,adult,Macbride,NA,NA,NA,NA,NA,NA,NA,NA,NA,Louisa,Died,NA,NotR
+291,March,2014,adult,SOAR,0.197,0,NA,NA,B,NA,NA,B,NA,Marion,R,NA,R
+292,March,2014,juvenile,SOAR,0.127,0,NA,NA,B,NA,NA,B,NA,Winneshiek,R,NA,R
+293,April,2014,adult,SOAR,0.03,0,NA,NA,B,NA,NA,B,NA,Appanoose,EU,NA,NotR
+294,April,2014,adult,SOAR,0.15,0,NA,NA,B,NA,NA,B,N,Davis,EU,NA,NotR
+295,April,2014,adult,WCC,7,0,NA,NA,C,NA,NA,C,NA,Franklin,Died,NA,NotR
+296,April,2014,adult,Macbride,0.039,0,NA,NA,B,NA,NA,B,NA,Linn,EU,NA,NotR
+297,April,2014,NA,Macbride,0.65,0,NA,NA,C,NA,NA,C,NA,Linn,EU,NA,NotR
+298,April,2014,NA,Macbride,0.309,0,NA,NA,SC,NA,NA,SC,NA,Scott,EU,NA,NotR
+299,April,2014,adult,SOAR,NA,NA,0.8,NA,NA,B,NA,B,N,Shelby,DOA,NA,NotR
+300,May,2014,adult,SOAR,NA,NA,0.5,NA,NA,B,NA,B,N,Dickinson,EU,NA,NotR
+301,June,2014,<1,SOAR,0.05,0,NA,NA,B,NA,NA,B,N,Winneshiek,UNR,**UNR is a negative rehabilitative outcome and for the purposes of this study UNR are included with the euthanized (EU) category.,NotR
+302,July,2014,<1,SOAR,0.026,0,NA,NA,B,NA,NA,B,NA,Buchanan,Died,NA,NotR
+303,July,2014,juvenile,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,N,Dickinson,EU,NA,NotR
+304,July,2014,<1,SOAR,0.016,0,NA,NA,B,NA,NA,B,N,Sioux,R,NA,R
+305,July,2014,<1,SOAR,0.01,0,NA,NA,B,NA,NA,B,NA,Webster,R,NA,R
+306,July,2014,<1,SOAR,NA,NA,0.5,NA,NA,B,NA,B,N,Winneshiek,DOA,NA,NotR
+307,July,2014,juvenile,SOAR,NA,NA,0.9,NA,NA,B,NA,B,N,Winneshiek,DOA,NA,NotR
+308,August,2014,<1,SOAR,0.013,0,NA,NA,B,NA,NA,B,NA,Clay,R,NA,R
+309,August,2014,<1,SOAR,0.028,0,NA,NA,B,NA,NA,B,NA,Polk,R,NA,R
+310,September,2014,<1,SOAR,NA,NA,0.5,NA,NA,B,NA,B,N,Dallas,DOA,NA,NotR
+311,September,2014,juvenile,SOAR,0.09,0,NA,NA,B,NA,NA,B,N,Winneshiek,EU,NA,NotR
+312,October,2014,adult,Macbride,0.65,0,NA,NA,C,NA,NA,C,PG,Jones,EU,**lead in digestive tract,NotR
+313,October,2014,adult,SOAR,NA,NA,NA,NA,NA,NA,NA,NA,N,Winneshiek,EU,NA,NotR
+314,October,2014,<1,SOAR,0.002,0,NA,NA,B,NA,NA,B,N,Clayton,EU,NA,NotR
+315,November,2014,<1,SOAR,0.21,0,NA,NA,SC,NA,NA,SC,N,Audubon,R,NA,R
+316,November,2014,juvenile,SOAR,0.483,0,NA,NA,SC,NA,NA,SC,NA,Clarke,EU,NA,NotR
+317,November,2014,<1,SOAR,0.005,0,NA,NA,B,NA,NA,B,N,Clay,R,NA,R
+318,November,2014,NA,Macbride,0.248,0,NA,NA,SC,NA,NA,SC,N,Monroe,R,NA,R
+319,November,2014,adult,SOAR,0.154,0,NA,NA,B,NA,NA,B,PS,Poweshiek,Died,"**BLL = 0.154 ppm, liver lead <0.5 ppm",NotR
+320,December,2014,adult,Macbride,0.03,0,NA,NA,B,NA,NA,B,N,Delaware,R,NA,R
+321,December,2014,adult,Macbride,0.17,0,NA,NA,B,NA,NA,B,N,Dubuque,EU,NA,NotR
+322,December,2014,adult,WCC,4.35,0,NA,NA,C,NA,NA,C,NA,Story,Died,NA,NotR

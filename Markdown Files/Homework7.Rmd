@@ -1,0 +1,190 @@
+---
+title: "Homework7"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r, message = FALSE, warning = FALSE}
+library(faraway)
+library(readr)
+library(leaps)
+eagle_data <- read.csv(here::here("Data", "lead_eagles_iowa.csv"))
+```
+
+
+# Question 1
+```{r}
+data(prostate)
+head(prostate)
+lm_prostate <- lm(lpsa ~ ., data=prostate)
+summary(lm_prostate)
+```
+
+# Question 1A
+```{r}
+# Backward Elimination
+drop1(lm_prostate, test='F')
+lm_prostate1 <- update(lm_prostate, . ~ . - gleason)
+drop1(lm_prostate1, test='F')
+lm_prostate2 <- update(lm_prostate1, . ~ . - lcp)
+drop1(lm_prostate2, test='F')
+lm_prostate3 <- update(lm_prostate2, . ~ . - pgg45)
+drop1(lm_prostate3, test='F')
+lm_prostate4 <- update(lm_prostate3, . ~ . - age)
+drop1(lm_prostate4, test='F')
+lm_prostate5 <- update(lm_prostate4, . ~ . - lbph)
+drop1(lm_prostate5, test='F')
+```
+Best Model: lpsa ~ lcavol + lweight + svi
+
+# Question 1B
+```{r}
+# AIC
+prostate_null <- lm(lpsa ~ 1, data=prostate)
+prostate_scope <- reformulate(colnames(prostate)[1:8])
+prostate_aic <- step(prostate_null, scope=prostate_scope, direction='forward', trace=0)
+summary(prostate_aic)
+```
+Best Model: lpsa ~ lcavol + lweight + svi + lbph + age
+
+# Question 1C
+```{r}
+# Adjusted R^2
+prostate_subsets <- regsubsets(lpsa ~ ., data=data.frame(prostate))
+rs <- summary(prostate_subsets)
+data.frame(rs$outmat, rs$adjr2)
+```
+The model with the highest adjusted r^2 is 
+lpsa ~ lcavol + lweight + age + lbph + svi + lcp + pgg45 at 0.627. However, the much simpler model lpsa ~ lcavol + lweight + svi has a very similar r^2 of 0.614. 
+
+# Question 1D
+```{r}
+# Mallow's Cp
+plot(1:8, rs$cp, ylim = c(0,26), xlim = c(1,8))
+abline(0,1)
+```
+The model with the lowest Mallows CP is lpsa ~ lcavol + lweight + lbph + svi. I would say this is also fairly close to the Cp = p line, and the marginal benefit of adding more predictors is quite low. 
+
+
+# Question 2
+```{r}
+data(teengamb)
+head(teengamb)
+lm_gamble <- lm(gamble ~ ., data=teengamb)
+summary(lm_gamble)
+```
+
+# Question 2A
+```{r}
+# Backward Elimination
+drop1(lm_gamble, test='F')
+lm_gamble1 <- update(lm_gamble, . ~ . - status)
+drop1(lm_gamble1, test='F')
+lm_gamble2 <- update(lm_gamble1, . ~ . - verbal)
+drop1(lm_gamble2, test='F')
+```
+Best Model: gamble ~ sex + income
+
+# Question 2B
+```{r}
+# AIC
+gamble_null <- lm(gamble ~ 1, data=teengamb)
+gamble_scope <- reformulate(colnames(teengamb)[1:4])
+gamble_aic <- step(gamble_null, scope=gamble_scope, direction='forward', trace=0)
+summary(gamble_aic)
+```
+Best Model: gamble ~ income + sex + verbal
+
+# Question 2C
+```{r}
+# Adjusted R^2
+gamble_subsets <- regsubsets(gamble ~ ., data=data.frame(teengamb))
+rs_gamble <- summary(gamble_subsets)
+data.frame(rs_gamble$outmat, rs_gamble$adjr2)
+```
+The model with the highest adjusted r^2 is gamble ~ sex + income + verbal at 0.493; however, gamble ~ sex + income has a comparable adjusted r^2 of 0.479. 
+
+# Question 2D
+```{r}
+# Mallows Cp
+plot(1:4, rs_gamble$cp, ylim=c(0,12))
+abline(0,1)
+```
+The model with the minimum Mallows CP, which is also on the Cp=p line is gamble ~ sex + income + verbal. 
+
+# Question 3
+```{r}
+data(trees)
+head(trees)
+lm_trees <- lm(log(Volume) ~ Height * Girth, data=trees)
+summary(lm_trees)
+```
+It would not make sense to simplify this model because both of the predictors and the interaction term are highly significant. 
+
+# Question 4A
+```{r}
+data(gala)
+head(gala)
+lm_gala <- lm(Species ~ Area + Elevation + Nearest + Scruz + Adjacent, data=gala)
+summary(lm_gala)
+```
+
+# Question 4B
+```{r}
+data(galamiss)
+head(galamiss)
+lm_galamiss <- lm(Species ~ Area + Elevation + Nearest + Scruz + Adjacent, data=galamiss)
+summary(lm_galamiss)
+```
+
+# Question 4C
+```{r}
+lm_elevation <- lm(Elevation ~ Area + Nearest + Scruz + Adjacent, data=galamiss)
+summary(lm_elevation)
+
+pred_vals <- predict(lm_elevation, galamiss[is.na(galamiss$Elevation), ])
+
+galamiss_imputed <- data.frame(galamiss)
+galamiss_imputed$Elevation[is.na(galamiss$Elevation)] <- pred_vals
+
+lm_galamiss2 <- lm(Species ~ Area + Elevation + Nearest + Scruz + Adjacent, data=galamiss_imputed)
+summary(lm_galamiss2)
+```
+The R-squared decreases a little in our imputed model, and Adjacent becomes a more significant predictor. 
+
+# Question 5A
+```{r}
+head(eagle_data)
+xtabs( ~ Lead_level_code + Released, data=eagle_data)
+```
+
+# Question 5B
+```{r}
+# Conditional Probability: Released on Background
+54/(54+80)
+
+# Conditional Probability: Released on Sub-Clinical
+10/(27+10)
+
+# Conditional Probability: Released on Clinical
+5/(94+5)
+```
+
+# Question 5C
+```{r}
+# Logistic Regression
+eagle_glm <- glm((Released=="R")*1 ~ Lead_level_code, data=eagle_data, family = 'binomial')
+summary(eagle_glm)
+
+# Background 
+exp(-0.3930)/(1+exp(-0.3930))
+
+# Sub-Clinical
+exp(-0.3930 - 0.6002)/(1+exp(-0.3930 - 0.6002))
+
+# Clinical
+exp(-0.3930 - 2.5408)/(1+exp(-0.3930 - 2.5408))
+```
+These probabilities are the same as those calculated in part b. 
+
